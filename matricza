@@ -1,0 +1,24 @@
+a = []
+b = []
+d = input("Введите операцию(+/*): ")
+print("Введите первую матрицу")
+for x in range(3):
+a.append([int(i) for i in input().split()])
+print("Введите вторую матрицу")
+for x in range(3):
+b.append([int(i) for i in input().split()])
+
+if d == "+":
+for x in range(3):
+for y in range(3):
+a[x][y]+=b[x][y]
+elif d == "*":
+for x in range(3):
+for y in range(3):
+a[x][y]*=b[x][y]
+else:
+print("Неизвестная операция!")
+for x in range(3):
+for y in range(3):
+print(a[x][y], end=' ')
+print()
