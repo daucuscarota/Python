@@ -1,24 +1,40 @@
-a = []
-b = []
-d = input("Введите операцию(+/*): ")
-print("Введите первую матрицу")
-for x in range(3):
-a.append([int(i) for i in input().split()])
-print("Введите вторую матрицу")
-for x in range(3):
-b.append([int(i) for i in input().split()])
-
-if d == "+":
-for x in range(3):
-for y in range(3):
-a[x][y]+=b[x][y]
-elif d == "*":
-for x in range(3):
-for y in range(3):
-a[x][y]*=b[x][y]
-else:
-print("Неизвестная операция!")
-for x in range(3):
-for y in range(3):
-print(a[x][y], end=' ')
+mtx1 = []
+mtx2 = []
+opr = input("Введите операцию (+ или * ): ")
+print("Введите 1-ую матрицу")
+for x in range (3):
+	s=[]	
+	for y in range (3):
+		sappend(int(input()))
+	mtx1.append(s)
+for x in range(3):     		#Вид 1-ой матрицы
+	for y in range(3): 
+		print(mtx1[x][y], end = " ") 
+	print()   
+print("Введите 2-ую матрицу")
+mtx2 = []
+for x in range (3):
+	s=[]	
+	for y in range (3):
+		sappend(int(input()))
+	mtx2.append(s)
+for x in range(3):		#Вид 2-ой матрицы          
+	for y in range(3): 
+        	print(mtx2[x][y], end = " ")
+	print()
 print()
+	 
+if opr == "+":
+	for x in range(3):
+		for y in range(3):
+			mtx1[x][y] += mtx2[x][y]
+elif opr == "*":
+	for x in range(3):
+		for y in range(3):
+			mtx1[x][y] *= mtx2[x][y]
+else:
+    print("Ошибка. Команда не выполнена")
+for x in range(3):
+	for y in range(3):
+		print(mtx1[x][y], end = " ")
+	print()
