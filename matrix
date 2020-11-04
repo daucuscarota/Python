@@ -5,7 +5,7 @@ print("Введите 1-ую матрицу")
 for x in range (3):
 	s=[]	
 	for y in range (3):
-		sappend(int(input()))
+		s.append(int(input()))
 	mtx1.append(s)
 for x in range(3):     		#Вид 1-ой матрицы
 	for y in range(3): 
@@ -16,7 +16,7 @@ mtx2 = []
 for x in range (3):
 	s=[]	
 	for y in range (3):
-		sappend(int(input()))
+		s.append(int(input()))
 	mtx2.append(s)
 for x in range(3):		#Вид 2-ой матрицы          
 	for y in range(3): 
